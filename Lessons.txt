@@ -1,0 +1,95 @@
+$(selector).action ()- Selector
+$(selector).before(content);
+$(selector).after(content);
+$(selector).text(content);
+$(selector).text();
+$(selector).html();
+$(selector).css(propertyname);
+$(selector).css(propertyname,value);
+$(selector).attr(attribute);
+$(selector).attr(attribute,value);
+$(selector).val();
+$(selector).val(attribute,value);
+
+
+
+
+
+("p").text("Welcome to this fun tutorial")
+
+jQuery.fn.init [p, prevObject: jQuery.fn.init(1)]
+
+$("li:first").text()
+"Golden Retrieveer"
+$("ul").after("<h2>are adorable</h2>")
+jQuery.fn.init [ul, prevObject: jQuery.fn.init(1)]
+$("h1").css("color", "red")
+jQuery.fn.init [h1, prevObject: jQuery.fn.init(1)]
+$("h1").css("background-color", "black")
+jQuery.fn.init [h1, prevObject: jQuery.fn.init(1)]
+$("ul").before("<h2>My favorite Dogs</h2>")
+jQuery.fn.init [ul, prevObject: jQuery.fn.init(1)]
+$("li").text()
+"Golden RetrieveerSyberian HuskeyLabradorBullDog"
+$("li:last").html()
+"BullDog"
+$("li:last").html("<li>German Shephard</li>")
+jQuery.fn.init [li, prevObject: jQuery.fn.init(1)]
+$("ul").text()
+"
+            
+            Golden Retrieveer
+            Syberian Huskey
+            Labrador
+            German Shephard
+        "
+$("ul").html()
+"
+            <!--<li>Golden Retrieveer <a href="google.com">Google</a></li>-->
+            <li>Golden Retrieveer</li>
+            <li>Syberian Huskey</li>
+            <li>Labrador</li>
+            <li><li>German Shephard</li></li>
+        "
+$("h1").css(design)
+$("h1").css(design)
+jQuery.fn.init [h1, prevObject: jQuery.fn.init(1)]
+$("img").attr("border","5px solid black")
+
+
+Events:
+$(selector).click(function)
+
+Methods
+$(selector).addClass(classnameclick(function)
+
+$("img").addClass("styleclass")
+jQuery.fn.init(3) [img.styleclass, img.styleclass, img.styleclass, prevObject: jQuery.fn.init(1)]
+$("img").removeClass("styleclass")
+jQuery.fn.init(3) [img, img, img, prevObject: jQuery.fn.init(1)]
+$("img").toggleClass("styleclass")
+jQuery.fn.init(3) [img.styleclass, img.styleclass, img.styleclass, prevObject: jQuery.fn.init(1)]
+$("img").toggleClass("styleclass")
+jQuery.fn.init(3) [img, img, img, prevObject: jQuery.fn.init(1)]
+$("img").toggleClass("styleclass")
+jQuery.fn.init(3) [img.styleclass, img.styleclass, img.styleclass, prevObject: jQuery.fn.init(1)]
+$("img").toggleClass("styleclass")
+jQuery.fn.init(3) [img, img, img, prevObject: jQuery.fn.init(1)]
+
+$(selector).on(event,function) - bind eventhandler
+$(selector).off(event,function)
+$(selector).keypress(event,function)
+
+
+Effects
+hide(speed, callback);
+show(speed, callback);
+toggle(speed, callback);
+fadeOut(speed,callback);
+slideDown(speed,callback);
+slideUp(speed,callback);
+
+
+UI:
+droppable() ; -make any element droppable at specified target
+

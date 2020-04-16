@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JQuery Tutorial</title>
+        <link type="text/css" rel="stylesheet" href="index.css">
+        <script  src="https://code.jquery.com/jquery-3.4.1.js"  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+        <script  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <h1>Basics</h1>
+        <p>Learning JQuery</p>
+        <input id="date" type="text" size="20" value="Datepicker example"><br>
+        <br>
+        <p>On and Keypress Example..</p>
+
+        <ul>
+            <!--<li>Golden Retrieveer <a href="google.com">Google</a></li>-->
+            <li>Golden Retrieveer</li>
+            <li>Syberian Huskey</li>
+            <li>Labrador</li>
+            <li>BullDog</li>
+        </ul>
+        <button>Submit</button> <br>
+        <button id="AddClass">Try AddClass to Images</button>
+        <button id="hide" class="button">Hide</button>
+        <button id="show" class="button">Show</button> 
+        <button id="bye">FadeOut</button> 
+        <button id="fade">FadeIn</button> 
+        <button id="slide">Slide</button> 
+
+         <div class="puppers">
+                <img id="one" src="puppers/DG1.jpg">
+                <img id="two" src="puppers/dg2.jpg">
+                <img id="three" src="puppers/DG3.jpg">
+        </div><br><br><br><br>
+        <div class="slide">
+            <div id="1" style="width:200px;height:100px;background-color: orange;"></div>
+            <div id="2" style="width:200px;height:100px;background-color: green;"></div>
+        </div>
+        <input type="text" id="press" size="20" value="On and Keypress example">  <br>
+        <!--draggable sample-->
+        <div id="drag">
+            <p>Drag me around</p>
+            </div><br>
+            <!--draggable sample-->
+            <div id="drop">
+                <p>My Home</p>
+            </div><br>
+
+            <input type="text" id="sometext" value=""><br>
+      <script>
+            /*let design={
+                color: "blue",
+                background:"green",
+                border:"3px solid black"
+            }*/
+            $(document).ready(function(){
+                    //Click and Val method
+                        $("button:first").click(function(){
+                            $("#sometext").val("Setting Value now");
+                            alert("Value: "  + $("#sometext").val());
+                        });
+                        
+                        //Add Class
+                        $("#AddClass").click(function(){
+                        $("img").addClass("styleclass");
+                        });    
+                        
+                        //Click even hide 
+                        $("img").click(function(){
+                            $(this).hide();
+                        });
+                        
+                        //Keypress and On event
+                        $("input:first").on("keypress",function(){
+                            $("p:last").hide();
+                        });
+
+                        //Hide and Show
+                        $("#hide").click(function(){
+                            $("img").hide();
+                        });
+                        // Show
+                        $("#show").click(function(){
+                            $("img").show();
+                        });
+                        $("#bye").click(function(){
+                               $("#one").fadeOut("slow");
+                               $("#two").fadeOut("fast");
+                               $("#three").fadeOut("slow");
+                        });
+                        //Fade
+                        $("#fade").click(function(){
+                               $("#one").fadeIn("slow");
+                               $("#two").fadeIn("fast");
+                               $("#three").fadeIn("fast");
+                        });
+                        //Slide
+                        $("#slide").click(function(){
+                               $("#1").slideToggle("slow");
+                               $("#2").slideToggle("slow");
+                        });
+                        //Draggable
+                       $("#drag").draggable();
+                        //Droppable
+                        $("#one").draggable();
+                        $("#drop").droppable();
+                        //Date picker
+                        $("#date").datepicker();
+
+            });
+        </script>
+       
+        <style>
+            .styleclass{
+                border: 5px solid green
+            }
+            #drag{
+                width:150px;
+                height: 60px;
+                background-color: pink;
+            }
+            #drop{
+                width: 200px;
+                height: 200px;
+                float:right;
+                background-color: aquamarine;
+            }
+        </style>
+       
+    </body>
+</html>
